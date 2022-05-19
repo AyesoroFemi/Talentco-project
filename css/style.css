@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Global Css Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-ss);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+.wrapper {
+  background-image: url("../assets/hero_section.png");
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding: 1rem 3rem 0 3rem;
+  max-width: 2000px;
+  margin: auto;
+}
+/* Css Custom Properties */
+:root {
+  --primary: #272d4e;
+  --secondary: #94a2b3;
+  --light: #fff;
+  --bg: #3789ff;
+  --btn-color: #ffba49;
+
+  --ff-ss: "Montserrat", sans-serif;
+
+  --fw-n: 700;
+  --fw-m: 600;
+  --fw-s: 500;
+
+  --fs: 18px;
+  --fss: 16px;
+}
+
+/* Navbar styles */
+.container__navbar {
+  padding: 1rem auto 0 auto;
+}
+
+/* .container__navbar .nav__links { */
+  /* flex: 2; */
+
+  /* border: 4px solid teal; */
+/* } */
+.container__navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__links a {
+  font-size: var(--fss);
+  font-weight: var(--fw-m);
+  margin-right: 1.875rem;
+}
+
+/* .container__navbar .btn {
+  /* margin-inline-start: auto; */
+} */
+.container__navbar .btn a {
+  padding: 12px 17px;
+  border-radius: 5px;
+  font-weight: var(--fw-m);
+  font-size: 14px;
+}
+.container__navbar .btn a:first-child {
+  margin-right: 1.875rem;
+  border: 3px solid var(--bg);
+  color: var(--bg);
+}
+
+.container__navbar .btn a:last-child {
+  background-color: var(--bg);
+  color: var(--light);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* End of navbar styles */
+
+.hero__container {
+  margin-top: 43px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+.hero__container h1 {
+  font-size: 65px;
+  line-height: 65px;
+  color: var(--primary);
+}
+.hero__container p {
+  margin-top: 29px;
+  color: var(--secondary);
+  width: 520px;
+}
+.btn__apply {
+  margin-top: 3rem;
+}
+.hero__container a {
+  background: var(--bg);
+  color: var(--light);
+  padding: 22px 41px;
+  border-radius: 5px;
+  font-weight: var(--fw-m);
+}
+.hero__container img {
+  width: 100%;
+}
+
+.pool__text {
+  text-align: center;
+  padding-bottom: 2rem;
+  /* margin:  0; */
+}
+.pool__text h1 {
+  font-size: 2.5rem;
+  line-height: 70px;
+  color: var(--primary);
+  font-weight: 600;
+}
+.pool__text p {
+  color: var(--secondary);
+  max-width: 960px;
+  margin: auto;
+}
+.work__time {
+  max-width: 2000px;
+  margin: auto;
+  padding: 0rem 3rem 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.work__time img {
+  max-width: 100%;
+}
+
+.work__time div:first-child {
+}
+
+.work__time div:first-child div {
+  margin-top: -2rem;
+  padding-top: 0rem;
+  padding-left: 110px;
+  padding-right: 1rem;
+  /* transform: translateX(140px); */
+  /* border: 5px solid teal; */
+}
+
+.work__time div:nth-of-type(2) {
+  /* border: 5px solid teal; */
+  padding-top: 2rem;
+}
+
+.work__time div:nth-of-type(2) div{
+  margin-top: -3rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+   padding-top: 0rem;
+}
+.work__time div:last-child img{
+    padding-top: 8rem;
+     /* border: 5px solid teal;  */
+}
+.work__time div:last-child div{
+     margin-top: -1rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+   padding-top: 0rem;
+}
+.work__time div:first-child h1,
+.work__time div:nth-of-type(2) h1,
+.work__time div:last-child h1 {
+  font-weight: 600;
+  color: var(--primary);
+  /* border: 5px solid teal; */
+}
+.work__time div:first-child p,
+.work__time div:nth-of-type(2) p,
+.work__time div:last-child p {
+  margin-top: 1rem;
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.work__time div:first-child a,
+.work__time div:nth-of-type(2) a,
+.work__time div:last-child a {
+  color: var(--bg);
+  font-weight: var(--fw-m);
+}
+
+
+
+/* Media Queries for Tablet */
+
+@media screen and (max-width: 991px) {
+
+}
+
+/* End of Media Queries for Tablet */
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 579px) {
+}
+/* End of Media Queries for Mobile */
