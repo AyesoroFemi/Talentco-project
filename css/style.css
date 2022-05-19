@@ -160,13 +160,19 @@ i {
   max-width: 100%;
 }
 
+/* .work__time .learn__more{
+  border: 4px solid red;
+  display: flex;
+  align-items: center;
+} */
+
 .work__time div:first-child {
 }
 
 .work__time div:first-child div {
   margin-top: -2rem;
   padding-top: 0rem;
-  padding-left: 110px;
+  padding-left: 6.875rem;
   padding-right: 1rem;
   /* transform: translateX(140px); */
   /* border: 5px solid teal; */
@@ -312,9 +318,27 @@ i {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+  .hero__container p {
+    width: 100%;
+    text-align: center;
+  }
   .hero__container h1 {
     font-size: 2.5rem;
+    text-align: center;
   }
+  .btn__apply {
+    display: flex;
+    justify-content: center;
+  }
+  .hero__container a {
+    background: var(--bg);
+    color: var(--light);
+    padding: 16px 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: var(--fw-m);
+  }
+
   .hero__container div:last-child {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -324,8 +348,12 @@ i {
     /* display: none; */
     width: 100%;
   }
-  .pool__text{
+  .pool__text {
     margin-top: 3rem;
+  }
+  .pool__text h1 {
+    line-height: 50px;
+    margin-bottom: 1rem;
   }
   .work__time {
     grid-template-columns: 1fr;
@@ -334,30 +362,53 @@ i {
   .work__time div:last-child img {
     padding-top: 2rem;
   }
+  .step__container{
+    /* padding-bottom: 5rem; */
+  }
   .step__container .step__platform {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 0rem;
+    transform: translateY(0rem);
+    padding-left: 1rem;
   }
   .talent__platform {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1rem;
+    transform: translateY(5rem);
   }
+
 }
 
 /* End of Media Queries for Tablet */
 
 /* Media Queries for Mobile */
 @media screen and (max-width: 579px) {
-  .wrapper{
+  .wrapper,
+  .work__time,
+  .step__container {
     padding: 1rem 1rem 0 1rem;
   }
   .hero__container p {
     width: 100%;
+    text-align: center;
+    line-height: 1.5rem;
   }
   .hero__container h1 {
     font-size: 2rem;
     line-height: 3rem;
+    text-align: center;
   }
-
+  .pool__text h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .pool__text p {
+    line-height: 1.5rem;
+  }
+  .work__time div:first-child div,
+  .work__time div:nth-of-type(2) div,
+  .work__time div:last-child div {
+    padding-left: 2rem;
+  }
 }
 /* End of Media Queries for Mobile */
