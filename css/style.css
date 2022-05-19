@@ -63,9 +63,9 @@ a {
   margin-right: 1.875rem;
 }
 
-/* .container__navbar .btn {
+.container__navbar .btn {
   /* margin-inline-start: auto; */
-} */
+} 
 .container__navbar .btn a {
   padding: 12px 17px;
   border-radius: 5px;
