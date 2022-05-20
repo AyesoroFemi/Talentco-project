@@ -297,7 +297,67 @@ i {
   /* border: 4px solid red; */
   /* margin-top: -4rem; */
 }
+.trusted__talent {
+  text-align: center;
+  transform: translateY(-5rem);
 
+  /* max-width: 2000px; */
+  /* margin: auto; */
+}
+.trusted__container {
+  background-image: url("../assets/Group\ 33\ \(2\).png");
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5rem 3rem 5rem 3rem;
+  /* margin: 0rem 3rem; */
+  height: 1000px;
+}
+.trusted__talent h1 {
+  color: var(--primary);
+  width: 35%;
+  margin: auto;
+  font-weight: 600;
+  font-size: 3rem;
+  transform: translateY(4rem);
+}
+.trusted__container p {
+  background-color: var(--light);
+  padding: 57px 82px;
+  width: 32%;
+  margin: auto;
+  transform: translateY(12rem);
+  box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+  border-radius: 20px;
+  line-height: 29px;
+  color: var(--secondary);
+  background-image: url("../assets/”.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.dream__opportunity {
+  text-align: center;
+  margin-bottom: -5rem;
+}
+.dream__opportunity h1 {
+  color: var(--primary);
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+.dream__opportunity p {
+  width: 40%;
+  margin: auto;
+  color: var(--secondary);
+}
+.dream__opportunity a {
+  background: var(--bg);
+  color: var(--light);
+  padding: 13px 17px;
+  border-radius: 5px;
+  font-weight: var(--fw-m);
+  font-size: 14px;
+}
 /* End of Step session */
 .footer__image {
   margin: 0 5rem;
@@ -434,6 +494,33 @@ i {
     grid-template-columns: 1fr;
     gap: 1rem;
     transform: translateY(5rem);
+  }
+
+  .trusted__container {
+  }
+  .trusted__talent h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .trusted__container p {
+    padding: 10px 16px;
+    width: 100%;
+  }
+  .dream__opportunity {
+    margin: 0 1rem 0rem 1rem;
+  }
+  .dream__opportunity h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin: 1rem 0;
+  }
+  .dream__opportunity p {
+    width: 100%;
   }
   .footer__image {
     margin: 0 0.5rem;
